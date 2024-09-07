@@ -27,8 +27,8 @@
               <stringProp name="Argument.value">${__P(users_file,../user-files/users2.csv)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="bookings_file" elementType="Argument">
-              <stringProp name="Argument.name">bookings_file</stringProp>
+            <elementProp name="BOOKINGS_FILE" elementType="Argument">
+              <stringProp name="Argument.name">BOOKINGS_FILE</stringProp>
               <stringProp name="Argument.value">${__P(account_file,../data-files/accounts.csv)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
@@ -115,7 +115,7 @@
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login" enabled="true">
           <stringProp name="HTTPSampler.domain">fpsgameday1.sfdctest.my.salesforce.com</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">/services/Soap/c/51.0</stringProp>
@@ -191,17 +191,17 @@ xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;
         </hashTree>
         <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="false"/>
         <hashTree/>
-        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller">
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
           <stringProp name="IfController.condition">${__javaScript(&quot;${ACCOUNTID}&quot; != &quot;&quot;)}</stringProp>
           <boolProp name="IfController.evaluateAll">false</boolProp>
           <boolProp name="IfController.useExpression">true</boolProp>
         </IfController>
         <hashTree>
-          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer">
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
             <stringProp name="ConstantTimer.delay">3000</stringProp>
           </ConstantTimer>
           <hashTree/>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Opportunity - With Account ID as Input">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Opportunity - With Account ID as Input" enabled="true">
             <stringProp name="HTTPSampler.domain">fpsgameday1.sfdctest.my.salesforce.com</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
             <stringProp name="HTTPSampler.path">/services/data/v60.0/sobjects/Opportunity/</stringProp>
@@ -246,7 +246,7 @@ xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer">
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
             <stringProp name="ConstantTimer.delay">3000</stringProp>
           </ConstantTimer>
           <hashTree/>

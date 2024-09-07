@@ -5,8 +5,6 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="Arguments">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
-      <boolProp name="TestPlan.functional_mode">false</boolProp>
-      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="mobile-traffic">
@@ -27,13 +25,13 @@
               <stringProp name="Argument.value">${__P(users_file,../user-files/users1.csv)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="plans_file" elementType="Argument">
-              <stringProp name="Argument.name">plans_file</stringProp>
+            <elementProp name="PLANS_FILE" elementType="Argument">
+              <stringProp name="Argument.name">PLANS_FILE</stringProp>
               <stringProp name="Argument.value">${__P(contact_file,../data-files/contacts.csv)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="address_file" elementType="Argument">
-              <stringProp name="Argument.name">address_file</stringProp>
+            <elementProp name="ADDRESS_FILE" elementType="Argument">
+              <stringProp name="Argument.name">ADDRESS_FILE</stringProp>
               <stringProp name="Argument.value">${__P(opportunity_file,../data-files/opportunities.csv)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
@@ -139,7 +137,7 @@
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login">
           <stringProp name="HTTPSampler.domain">fpsgameday1.sfdctest.my.salesforce.com</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">/services/Soap/c/51.0</stringProp>
