@@ -2,7 +2,7 @@
   "jmeter_version" : "5.6.3",
   "tasks": [
     {
-    "task_name": "create_support_tickets",
+    "task_name": "create-support-tickets",
     "script_name": "create-support-tickets.jmx",
     "users_file": "users2.csv",
     "data_files": {
@@ -10,7 +10,7 @@
       }
     },
     {
-    "task_name": "view_update_tickets",
+    "task_name": "view-update-tickets",
     "script_name": "view-update-tickets.jmx",
     "users_file": "users3.csv",
     "data_files": {
@@ -18,7 +18,7 @@
       }
     },
     {
-      "task_name": "confirm_booking",
+      "task_name": "confirm-booking",
       "script_name": "live-chat-support.jmx"
     }
   ]
