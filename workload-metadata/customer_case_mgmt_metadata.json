@@ -14,7 +14,7 @@
     "script_name": "view-update-tickets.jmx",
     "users_file": "users3.csv",
     "data_files": {
-        "opportunity_file" : "opportunities.csv"  
+        "tickets_file" : "tickets.csv"  
       }
     },
     {
