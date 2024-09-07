@@ -2,7 +2,7 @@
   "jmeter_version" : "5.6.3",
   "tasks": [
     {
-    "task_name": "create-travel-booking",
+    "task_name": "create_travel_booking",
     "script_name": "create-travel-booking.jmx",
     "users_file": "users1.csv",
     "data_files": {
@@ -12,7 +12,7 @@
       }
     },
     {
-    "task_name": "view-update-booking",
+    "task_name": "view_update_booking",
     "script_name": "view-update-booking.jmx",
     "users_file": "users2.csv",
     "data_files": {
@@ -20,7 +20,7 @@
       }
     },
     {
-    "task_name": "cancel-booking",
+    "task_name": "cancel_booking",
     "script_name": "cancel-booking.jmx",
     "users_file": "users3.csv",
     "data_files": {
@@ -28,7 +28,7 @@
       }
     },
     {
-      "task_name": "confirm-booking",
+      "task_name": "confirm_booking",
       "script_name": "confirm-booking.jmx"
     }
   ]

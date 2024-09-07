@@ -2,24 +2,24 @@
   "jmeter_version" : "5.6.3",
   "tasks": [
     {
-    "task_name": "create-support-tickets",
-    "script_name": "create_support_tickets.jmx",
+    "task_name": "create_support_tickets",
+    "script_name": "create-support-tickets.jmx",
     "users_file": "users2.csv",
     "data_files": {
         "account_file" : "accounts.csv" 
       }
     },
     {
-    "task_name": "view-update-tickets",
-    "script_name": "view_update_tickets.jmx",
+    "task_name": "view_update_tickets",
+    "script_name": "view-update-tickets.jmx",
     "users_file": "users3.csv",
     "data_files": {
         "opportunity_file" : "opportunities.csv"  
       }
     },
     {
-      "task_name": "live-chat-support",
-      "script_name": "live_chat_support.jmx"
+      "task_name": "confirm_booking",
+      "script_name": "live-chat-support.jmx"
     }
   ]
 }
