@@ -7,8 +7,9 @@
     "users_file": "users1.csv",
     "data_files": {
         "account_file" : "accounts.csv",
-        "opportunity_file" : "opportunities.csv",
-        "contact_file" : "contacts.csv"
+	"address_file" : "address.csv",
+        "plans_file" : "plans.csv"
+
       }
     },
     {
@@ -16,7 +17,7 @@
     "script_name": "view-update-booking.jmx",
     "users_file": "users2.csv",
     "data_files": {
-        "account_file" : "accounts.csv" 
+        "bookings_file" : "bookings1.csv" 
       }
     },
     {
@@ -24,7 +25,7 @@
     "script_name": "cancel-booking.jmx",
     "users_file": "users3.csv",
     "data_files": {
-        "opportunity_file" : "opportunities.csv"  
+        "bookings_file" : "bookings2.csv" 
       }
     },
     {
