@@ -21,7 +21,7 @@
       }
     },
     {
-    "task_name": "cancel-booking",
+    "task_name": "3cancel-booking",
     "script_name": "cancel-booking.jmx",
     "users_file": "users3.csv",
     "data_files": {
