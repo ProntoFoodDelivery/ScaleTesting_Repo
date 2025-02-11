@@ -4,7 +4,7 @@
     {
     "task_name": "create-support-tickets",
     "script_name": "create-support-tickets.jmx",
-    "users_file": "PL-TESTDATA110.csv",
+    "users_file": "users2.csv",
     "data_files": {
         "account_file" : "accounts.csv" 
       }
