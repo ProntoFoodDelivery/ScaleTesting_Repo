@@ -1,0 +1,13 @@
+{
+    "jmeter_version" : "5.6.3",
+    "tasks": [
+      {
+      "task_name": "pronto-chat",
+      "script_name": "pronto-chat-agent.jmx",
+      "data_files": {
+          "utterence_file" : "utterence-file.csv" 
+        }
+      }
+    ]
+  }
+  
