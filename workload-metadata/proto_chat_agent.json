@@ -1,0 +1,13 @@
+{
+    "jmeter_version" : "5.6.3",
+    "tasks": [
+      {
+      "task_name": "proto-chat",
+      "script_name": "proto-chat-agent.jmx",
+      "data_files": {
+          "utterence_file" : "utterence_file.csv" 
+        }
+      }
+    ]
+  }
+  
