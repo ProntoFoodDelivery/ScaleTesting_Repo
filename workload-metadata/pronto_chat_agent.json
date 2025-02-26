@@ -2,11 +2,25 @@
     "jmeter_version" : "5.6.3",
     "tasks": [
       {
-      "task_name": "pronto-chat",
+      "task_name": "merchant-support-agent-knowledge-queries",
       "script_name": "pronto-chat-agent.jmx",
       "data_files": {
-          "utterence_file" : "utterence-file.csv" 
+          "utterence_file" : "queryutterances.csv" 
         }
+      },
+      {
+        "task_name": "merchant-support-agent-order-updates",
+        "script_name": "pronto-chat-agent.jmx",
+        "data_files": {
+            "utterence_file" : "orderupdateutternaces.csv" 
+          }
+      },
+      {
+        "task_name": "merchant-support-agent-redirect-human",
+        "script_name": "pronto-chat-agent.jmx",
+        "data_files": {
+            "utterence_file" : "humanredirectutterances.csv" 
+          }
       }
     ]
   }
