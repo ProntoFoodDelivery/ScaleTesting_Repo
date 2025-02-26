@@ -371,7 +371,7 @@
                 <boolProp name="CounterConfig.per_user">false</boolProp>
               </CounterConfig>
               <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Send Message Synchronously - ${queryNumber}">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Interaction - ${queryNumber}">
                 <stringProp name="HTTPSampler.domain">${API_HOST}</stringProp>
                 <stringProp name="HTTPSampler.path">${AGENT_API_PATH}/sessions/${afSessionId}/messages</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
